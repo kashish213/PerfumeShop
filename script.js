@@ -1,4 +1,5 @@
 // ================= CART =================
+// This is scrip.js file
 
 let cartCount = Number(localStorage.getItem("cartCount")) || 0;
 
