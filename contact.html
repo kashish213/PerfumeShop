@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerfumeShop | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">🌸 PerfumeShop</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Perfumes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="signin.html">Sign In</a>
+    </nav>
+
+    <div class="header-actions">
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <span class="cart">🛍️ <span id="cartCount">0</span></span>
+    </div>
+</header>
+
+<section class="page-banner">
+    <span>💌 GET IN TOUCH</span>
+    <h1>We'd Love To Hear From You</h1>
+    <p>Have a question? Our team is here to help.</p>
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-info">
+
+        <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div>
+                <h3>Email Us</h3>
+                <p>support@perfumeshop.com</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <div>
+                <h3>Call Us</h3>
+                <p>+91 98765 43210</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+                <h3>Visit Us</h3>
+                <p>Gujarat, India</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-form">
+
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form and we'll get back to you.</p>
+
+        <form onsubmit="contactForm(event)">
+
+            <label>Your Name</label>
+            <input type="text" id="contactName" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+            <label>Your Message</label>
+            <textarea id="contactMessage" rows="6" placeholder="Write your message..." required></textarea>
+
+            <button type="submit" class="auth-btn">Send Message 💌</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-logo">🌸 PerfumeShop</div>
+    <p>Your fragrance, your identity.</p>
+    <p class="copyright">© 2026 PerfumeShop. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
