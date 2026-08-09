@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerfumeShop | Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">🌸 PerfumeShop</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Perfumes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign In</a>
+    </nav>
+
+    <div class="header-actions">
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <span class="cart" onclick="showCart()">🛍️ <span id="cartCount">0</span></span>
+    </div>
+</header>
+
+<section class="page-banner">
+    <span>✨ OUR COLLECTION</span>
+    <h1>Find Your Perfect Perfume</h1>
+    <p>Luxury fragrances designed for every personality.</p>
+</section>
+
+<section class="products-section">
+
+    <div class="section-heading">
+        <span>BEST SELLERS</span>
+        <h2>Our Signature Collection</h2>
+    </div>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+
+            <button class="wishlist" onclick="addWishlist(this)">♡</button>
+
+            <div class="product-image pink-bottle">
+                <div class="perfume-bottle">
+                    <div class="perfume-cap"></div>
+                    <div class="perfume-neck"></div>
+                    <div class="perfume-body">
+                        <b>ROSE</b>
+                        <small>EAU DE PARFUM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-type">FLORAL</span>
+                <h3>Rose Elegance</h3>
+                <p>Romantic rose with soft vanilla notes.</p>
+
+                <div class="rating">★★★★★ <span>(128)</span></div>
+
+                <div class="product-bottom">
+                    <strong>₹1,499</strong>
+                    <button onclick="addToCart('Rose Elegance')">Add 🛍️</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+
+            <button class="wishlist" onclick="addWishlist(this)">♡</button>
+
+            <div class="product-image purple-bottle">
+                <div class="perfume-bottle">
+                    <div class="perfume-cap"></div>
+                    <div class="perfume-neck"></div>
+                    <div class="perfume-body">
+                        <b>VIOLET</b>
+                        <small>EAU DE PARFUM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-type">FLORAL</span>
+                <h3>Violet Dream</h3>
+                <p>Elegant violet with a sweet floral touch.</p>
+
+                <div class="rating">★★★★★ <span>(96)</span></div>
+
+                <div class="product-bottom">
+                    <strong>₹1,699</strong>
+                    <button onclick="addToCart('Violet Dream')">Add 🛍️</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+
+            <button class="wishlist" onclick="addWishlist(this)">♡</button>
+
+            <div class="product-image gold-bottle">
+                <div class="perfume-bottle">
+                    <div class="perfume-cap"></div>
+                    <div class="perfume-neck"></div>
+                    <div class="perfume-body">
+                        <b>ROYAL</b>
+                        <small>EAU DE PARFUM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-type">LUXURY</span>
+                <h3>Royal Oud</h3>
+                <p>Rich oud combined with warm woody notes.</p>
+
+                <div class="rating">★★★★★ <span>(215)</span></div>
+
+                <div class="product-bottom">
+                    <strong>₹2,199</strong>
+                    <button onclick="addToCart('Royal Oud')">Add 🛍️</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+
+            <button class="wishlist" onclick="addWishlist(this)">♡</button>
+
+            <div class="product-image blue-bottle">
+                <div class="perfume-bottle">
+                    <div class="perfume-cap"></div>
+                    <div class="perfume-neck"></div>
+                    <div class="perfume-body">
+                        <b>OCEAN</b>
+                        <small>EAU DE PARFUM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-type">FRESH</span>
+                <h3>Ocean Mist</h3>
+                <p>Cool aquatic notes with a refreshing finish.</p>
+
+                <div class="rating">★★★★★ <span>(174)</span></div>
+
+                <div class="product-bottom">
+                    <strong>₹1,599</strong>
+                    <button onclick="addToCart('Ocean Mist')">Add 🛍️</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+
+            <button class="wishlist" onclick="addWishlist(this)">♡</button>
+
+            <div class="product-image red-bottle">
+                <div class="perfume-bottle">
+                    <div class="perfume-cap"></div>
+                    <div class="perfume-neck"></div>
+                    <div class="perfume-body">
+                        <b>PASSION</b>
+                        <small>EAU DE PARFUM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-type">FRUITY</span>
+                <h3>Pink Passion</h3>
+                <p>Sweet fruity notes with a romantic finish.</p>
+
+                <div class="rating">★★★★★ <span>(143)</span></div>
+
+                <div class="product-bottom">
+                    <strong>₹1,799</strong>
+                    <button onclick="addToCart('Pink Passion')">Add 🛍️</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+
+            <button class="wishlist" onclick="addWishlist(this)">♡</button>
+
+            <div class="product-image black-bottle">
+                <div class="perfume-bottle">
+                    <div class="perfume-cap"></div>
+                    <div class="perfume-neck"></div>
+                    <div class="perfume-body">
+                        <b>MUSK</b>
+                        <small>EAU DE PARFUM</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-type">WOODY</span>
+                <h3>Midnight Musk</h3>
+                <p>Mysterious musk with deep woody notes.</p>
+
+                <div class="rating">★★★★★ <span>(189)</span></div>
+
+                <div class="product-bottom">
+                    <strong>₹1,999</strong>
+                    <button onclick="addToCart('Midnight Musk')">Add 🛍️</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-logo">🌸 PerfumeShop</div>
+    <p>Your fragrance, your identity.</p>
+    <p class="copyright">© 2026 PerfumeShop. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
